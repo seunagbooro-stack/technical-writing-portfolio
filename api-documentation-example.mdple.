@@ -1,0 +1,50 @@
+User Management API Documentation
+
+1. Overview
+
+The User Management API allows applications to retrieve user information.
+
+This is a fictional API created for learning purposes.
+
+2. API Endpoint
+
+"GET /api/v1/users/{user_id}"
+
+This endpoint retrieves information about a specific user.
+
+3. Request Parameter
+
+Parameter| Type| Description
+user_id| Integer| The unique ID of the user
+
+4. Example Request
+
+GET /api/v1/users/25
+
+5. Example Response
+
+{
+  "id": 25,
+  "name": "John",
+  "email": "john@example.com",
+  "status": "active"
+}
+
+6. Response Fields
+
+- "id": The user's unique identification number.
+- "name": The user's full name.
+- "email": The user's email address.
+- "status": The current status of the account.
+
+7. HTTP Status Codes
+
+- "200": Request successful.
+- "400": Invalid request.
+- "401": Authentication required.
+- "404": User not found.
+- "500": Internal server error.
+
+8. Conclusion
+
+The User Management API provides a simple way for applications to retrieve user information.
